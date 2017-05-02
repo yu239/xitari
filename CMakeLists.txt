@@ -113,12 +113,12 @@ INSTALL(
 
 IF(APPLE)
   INSTALL(FILES
-          libxitari.a
+          ${CMAKE_BINARY_DIR}/libxitari.a
           DESTINATION "${LIBDIR}")
   ELSE()
     INSTALL(FILES
-            libxitari.a
-            libxitari.so
+            ${CMAKE_BINARY_DIR}/libxitari.a
+            ${CMAKE_BINARY_DIR}/libxitari.so
             DESTINATION "${LIBDIR}")
 ENDIF()
 
